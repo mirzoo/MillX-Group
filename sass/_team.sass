@@ -1,0 +1,91 @@
+.team
+    &-wrap
+        padding: 150px 16px
+        padding-top: 10px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            display: block
+            top: 60%
+            left: 80%
+            right: 80%
+            bottom: 60%
+            z-index: -1
+            border-radius: 100%
+            width: 200px
+            height: 200px
+            background: hsla(37, 81%, 77%, 0.95)
+            filter: blur(80px)
+    &-title
+        font-family: 'Playfair Display'
+        font-style: normal
+        font-weight: 700
+        font-size: 97px
+        text-align: center
+        color: #21231D
+    &-frame
+        margin-top: 40px
+        width: 100%
+        height: 340px
+        border: 1px solid #21231D
+        border-radius: 95px
+        padding: 32px
+    &-overlay
+        background: #F4D097
+        display: inline-block
+        width: 100%
+        height: 100%
+        border-radius: 73px
+    &-img
+        border-radius: 73px
+        width: 100%
+        height: 100%
+        opacity: 0.8
+        object-fit: cover
+    &-items
+        display: flex
+        justify-content: space-around
+        align-content: center
+        align-content: center
+    &-subtitle
+        font-weight: 400
+        font-size: 24px
+        text-align: center
+        color: #21231D
+        margin-top: 50px
+        width: 355px
+
+
+
+@media (max-width: 1024px)
+    .team
+        &-frame
+            width: 90%
+
+@media (max-width: 768px)
+    .team
+        &-wrap
+            display: flex
+            flex-direction: column
+            align-content: center
+            align-items: center
+            padding-top: 0px
+            padding-bottom: 80px
+        &-title
+            font-size: 50px
+        &-frame
+            width: 380px
+            height: 335px
+        &-items
+            flex-direction: column
+
+@media (max-width: 425px)
+    .team
+        &-wrap
+            &::before
+                display: none
+        &-frame
+            width: 250px
+        &-subtitle
+            width: 250px
