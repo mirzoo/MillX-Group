@@ -609,6 +609,28 @@ hr {
   color: #21231D;
 }
 
+@media (max-width: 1024px) {
+  .about-frame {
+    width: 380px;
+    height: 335px;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-wrap {
+    padding-top: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-title {
+    text-align: center;
+    margin-top: 45px;
+  }
+}
+
 .main {
   /*&-elipse
         background-clip: content-box
